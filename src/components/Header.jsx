@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function Header() {
   const [mode, setMode] = useState(() => {
     const savedMode = localStorage.getItem("mode");
-    return savedMode ? JSON.parse(savedMode) : true;
+    return savedMode ? JSON.parse(savedMode) : false;
   });
 
   function handleToggleMode() {
@@ -23,7 +23,7 @@ function Header() {
   }, [mode]);
 
   return (
-    <header className="text-lightGray h-[30vh]  dark:bg-[url('./bg-mobile-dark.jpg')] lg:dark:bg-[url('./bg-desktop-dark.jpg')] bg-[url('./bg-mobile-light.jpg')] lg:bg-[url('./bg-desktop-light.jpg')] bg-cover grid grid-rows-[1fr_1fr] items-end gap-14 lg:gap-20">
+    <header className="text-lightGray h-[30vh]  dark:bg-[url('/bg-mobile-dark.jpg')] lg:dark:bg-[url('/bg-desktop-dark.jpg')] bg-[url('/bg-mobile-light.jpg')] lg:bg-[url('/bg-desktop-light.jpg')] bg-cover grid grid-rows-[1fr_1fr] items-end gap-14 lg:gap-20">
       <div className="flex justify-between items-center max-w-[40rem] mx-auto w-full px-6">
         <h1 className="tracking-[.5rem] uppercase text-2xl font-bold lg:text-3xl">
           todo
