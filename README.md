@@ -17,8 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/yamenbarakat/todo-app)
-- Live Site URL: [Add live site URL here](https://todo-app-yamen.netlify.app/)
+- Live Site URL: (<https://todo-app-yamen.netlify.app/)>)
 
 ## My process
 
